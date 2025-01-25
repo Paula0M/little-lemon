@@ -1,9 +1,16 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './Components/Homepage';
+import BookingPage from './Components/BookingPage';
 
 function Main() {
   return (
     <main>
-      {/* Add main content here */}
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/booking" element={<BookingPage />} />
+        {/* Add more routes as needed */}
+      </Routes>
     </main>
   );
 }

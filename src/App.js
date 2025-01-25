@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import Nav from './Nav';
 import Main from './Main';
-import Footer from './Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Nav />
       <Main />
-      <Footer />
-    </>
+    </Router>
   );
 }
 
