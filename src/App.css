@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #EDEFEE;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,97 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Typefaces */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@400;500&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+  color: #333333;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Markazi Text', serif;
+}
+
+h1 {
+  font-size: 64pt;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 20pt;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16pt;
+  line-height: 1.5;
+  max-width: 65ch;
+}
+
+a {
+  font-size: 18pt;
+  font-weight: 500;
+  color: #495e57;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer CSS Grid */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #EDEFEE;
+}
+
+.footer-logo {
+  grid-column: span 1;
+}
+
+.footer-nav,
+.footer-contact,
+.footer-social {
+  grid-column: span 1;
+}
+
+.footer-nav ul,
+.footer-contact ul,
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav li,
+.footer-contact li,
+.footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-nav a,
+.footer-contact a,
+.footer-social a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover,
+.footer-social a:hover {
+  text-decoration: underline;
 }
