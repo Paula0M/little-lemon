@@ -6,6 +6,7 @@ function CustomersSay() {
     { id: 1, name: 'Customer 1', rating: 5, image: 'customer1.jpg', review: 'Great food!' },
     { id: 2, name: 'Customer 2', rating: 4, image: 'customer2.jpg', review: 'Nice atmosphere.' },
     { id: 3, name: 'Customer 3', rating: 5, image: 'customer3.jpg', review: 'Excellent service!' },
+    { id: 4, name: 'Customer 4', rating: 4, image: 'customer4.jpg', review: 'Loved the desserts!' },
   ];
 
   return (
