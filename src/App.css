@@ -22,15 +22,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* Typefaces */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@400;500&display=swap');
 
@@ -141,7 +132,8 @@ img {
 .call-to-action,
 .specials,
 .customers-say,
-.chicago {
+.chicago
+.footer {
   align-items: center;
   width: 100%;
   max-width: 100%;
@@ -214,11 +206,6 @@ img {
 .chicago h2 {
   align-self: flex-start;
   margin-left: 460px;
-}
-
-/* Add margin to the paragraph in the Chicago section */
-.chicago p {
-  margin-left: 460px; /* Ajusta este valor según sea necesario */
 }
 
 /* Footer Styles */
