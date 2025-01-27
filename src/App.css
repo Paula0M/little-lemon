@@ -1,10 +1,13 @@
 .App {
   text-align: center;
 }
+
 /* Logo */
 .App-logo {
   height: 50px;
-  margin-left: 20px;
+  max-width: 14.25%;
+  margin-left: 0;
+  margin-right: 5px;
 }
 
 .footer-logo img {
@@ -16,16 +19,19 @@
   background-color: #EDEFEE;
   padding: 20px;
   width: 100%;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
 }
 
 .header-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
   max-width: 55%;
+  margin: 0 auto;
+}
+.nav-header {
+  max-width: 85.75%;
 }
 
 .App-link {
@@ -97,7 +103,8 @@ a:hover {
 /* Navigation Styles */
 nav {
   background-color: #EDEFEE;
-  padding: 10px 20px;
+  display: flex;
+  padding: 10px 0px;
 }
 
 nav ul {
@@ -105,6 +112,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  padding-inline-start: 0px;
 }
 
 nav li {
