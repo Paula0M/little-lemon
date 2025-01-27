@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css'; // Import the CSS file for styling
+import './App.css'; // Import the CSS file for styling'
+import logo from './Assets/logo2.svg'; // Import the logo
 
-const Footer = () => {
+function Footer() {
     return (
         <footer className="footer">
             {/* Logo Section */}
             <div className="footer-logo">
-                <img src="path-to-logo/logo.png" alt="Little Lemon Logo" />
+                <img src={logo} alt="Little Lemon Logo" />
             </div>
 
             {/* Doormat Navigation */}
@@ -39,6 +40,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-};
+}
 
 export default Footer;

@@ -7,15 +7,25 @@
   margin-left: 20px;
 }
 
+.footer-logo img {
+  height: 50px; /* Ajusta el tamaño de la imagen */
+  width: auto; /* Mantiene la proporción de la imagen */
+}
+
 .App-header {
   background-color: #EDEFEE;
   padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-width: 55%;
 }
 
 .App-link {
@@ -127,16 +137,17 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 .call-to-action,
 .specials,
 .customers-say,
-.chicago
+.chicago,
 .footer {
   align-items: center;
   width: 100%;
-  max-width: 100%;
+
   margin: 20px 0;
 }
 
@@ -159,9 +170,15 @@ img {
   align-items: center;
 }
 
+.chicago {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .specials-list,
 .testimonials-list {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -169,9 +186,9 @@ img {
 
 .special-item,
 .testimonial-item {
-  flex: 1 1 1 calc(25% - 20px);
+  flex: 1 1 1 calc(25% - 10px);
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -204,32 +221,45 @@ img {
 .specials h2,
 .customers-say h2,
 .chicago h2 {
-  align-self: flex-start;
-  margin-left: 460px;
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 0; /* Elimina padding adicional */
+  width: 100%; /* Asegura que el header ocupe el 100% del ancho del contenedor */
+  text-align: left;
+  max-width: 55%;
+  margin: 0 auto;
 }
 
 /* Footer Styles */
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-  padding: 20px;
   background-color: #EDEFEE;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 55%;
 }
 
 .footer-logo {
   flex: 0 1 auto;
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin: 0;
 }
 
 .footer-nav,
 .footer-contact,
-.footer-social {
-  flex: 1 1 calc(25% - 20px);
-  margin: 10px;
+.footer-social,
+.footer-logo {
+  flex: 1 1  calc(25% - 10px);
+  margin: 0;
+  text-align: left;
 }
 
 .footer-nav ul,

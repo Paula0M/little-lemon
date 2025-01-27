@@ -6,9 +6,10 @@ import './App.css';
 function Header() {
   return (
     <header className="App-header">
-      <img src={logo} className="App-logo" alt="Little Lemon Logo" />
-      <Nav />
-  
+      <div className="header-content">
+        <img src={logo} className="App-logo" alt="Little Lemon Logo" />
+        <Nav />
+      </div>
     </header>
   );
 }
