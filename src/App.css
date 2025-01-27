@@ -210,9 +210,15 @@ img {
 
 /* Align headers to the left */
 .specials h2,
-.customers-say h2 {
+.customers-say h2,
+.chicago h2 {
   align-self: flex-start;
   margin-left: 460px;
+}
+
+/* Add margin to the paragraph in the Chicago section */
+.chicago p {
+  margin-left: 460px; /* Ajusta este valor según sea necesario */
 }
 
 /* Footer Styles */

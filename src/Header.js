@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './Nav'; // Importar el componente Nav
-import logo from './logo2.svg'; 
+import logo from './Assets/logo2.svg'; 
 import './App.css';
 
 function Header() {
