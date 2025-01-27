@@ -226,23 +226,22 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 100%;
   justify-content: space-between;
   padding: 20px;
   background-color: #EDEFEE;
 }
 
 .footer-logo {
-  flex: 100%;
+  flex: 0 1 auto;
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .footer-nav,
 .footer-contact,
 .footer-social {
-  flex: 1 1 1 calc(33.333% - 20px);
+  flex: 1 1 calc(25% - 20px);
   margin: 10px;
 }
 
