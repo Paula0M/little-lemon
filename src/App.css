@@ -186,14 +186,6 @@ img {
 
 .chicago {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.specials-list,
-.testimonials-list {
-  width: 100%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
