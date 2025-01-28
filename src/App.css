@@ -162,6 +162,14 @@ border-radius: 8px;
   max-width: 1000px;
 }
 
+.specials-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Distribuye el título y el botón en los extremos */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .customers-say {
   display: flex;
   flex-direction: column;
@@ -388,6 +396,8 @@ a:hover {
 }
 
 button {
+  width: 200px;
+  height: 50px;
   font-family: Karla, sans-serif; /* Fuente del botón */
   font-size: 16px; /* Tamaño de la fuente */
   font-weight: bold; /* Peso de la fuente */
