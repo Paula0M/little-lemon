@@ -19,7 +19,7 @@
   background-color: #EDEFEE;
   padding: 20px;
   width: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
 }
 
