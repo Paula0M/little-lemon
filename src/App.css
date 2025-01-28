@@ -102,7 +102,7 @@ img {
 .specials,
 .customers-say,
 .chicago {
- width: 100%; /* Asegura que el fondo ocupe el 100% del ancho de la página */
+  width: 100%; /* Asegura que el fondo ocupe el 100% del ancho de la página */
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -120,8 +120,8 @@ img {
 .cta-content {
   display: flex;
   flex-direction: row;
-  align-items: left;
-  text-align: left;
+  align-items: center;
+  text-align: space-between;
   width: 100%;
   max-width: 1200px;
 }
@@ -133,18 +133,14 @@ img {
 .cta-image {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-  height: auto; /* Mantiene la proporción de la imagen */
-  width: 300px; /* Ajusta el tamaño de la imagen */
-  border-radius: 8px; /* Opcional: añade bordes redondeados */
-  margin-top: 100px;
+  justify-content: flex-end; /* Empuja la imagen a la derecha */
+  align-items: center;
 }
-.cta-content button {
-  font-size: 16px;
-  width: 200px;
-  height: 50px;
+
+.cta-image img {
+  width: 300px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  border-radius: 8px;
 }
 
 .cta-content p {

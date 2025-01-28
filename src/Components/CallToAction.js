@@ -5,7 +5,6 @@ import img from '../Assets/restauranfood1.png';
 function CallToAction() {
   return (
     <section className="call-to-action">
-      <div className='cta-background'>
       <div className="cta-content">
         <div className="cta-content-text">
           <h2>Little Lemon</h2>
@@ -16,7 +15,6 @@ function CallToAction() {
         <div className="cta-image">
           <img src={img} alt="Restaurant Food" />
         </div>
-      </div>
       </div>
     </section>
   );
