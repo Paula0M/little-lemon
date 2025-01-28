@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
+import Logo from './Assets/logo2.png';
 
 function Nav() {
   return (
     <nav className="nav-header">
+      <div className="logo-container">
+        <img src={Logo} alt="Little Lemon Logo" className="logo" />
+      </div>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>

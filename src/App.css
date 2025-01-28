@@ -3,16 +3,18 @@
 }
 
 /* Logo */
-.App-logo {
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
   height: 50px;
-  max-width: 14.25%;
-  margin-left: 0;
-  margin-right: 5px;
 }
 
 .footer-logo img {
-  height: 50px; /* Ajusta el tamaño de la imagen */
-  width: auto; /* Mantiene la proporción de la imagen */
+  height: 50px;
 }
 
 .App-header {
@@ -24,14 +26,9 @@
 }
 
 .header-content {
-  display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   max-width: 55%;
-  margin: 0 auto;
-}
-.nav-header {
-  max-width: 85.75%;
 }
 
 .App-link {
@@ -104,15 +101,25 @@ a:hover {
 nav {
   background-color: #EDEFEE;
   display: flex;
-  padding: 10px 0px;
+  align-items: center;
+  justify-content: space-between; /* Distribuye los elementos uniformemente */
+  padding: 10px 20px;
+}
+.nav-header {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos del nav */
+  justify-content: space-between; /* Distribuye los elementos con espacio igual entre ellos */
+  padding: 20px;
+  background-color: #EDEFEE;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
+  display: flex;
+  flex-grow: 1; /* Permite que la lista ocupe el espacio restante */
+  justify-content: space-evenly; /* Distribuye los elementos equidistantemente */
   padding: 0;
   margin: 0;
-  display: flex;
-  padding-inline-start: 0px;
 }
 
 nav li {
@@ -150,7 +157,6 @@ img {
 
 .call-to-action,
 .specials,
-.customers-say,
 .chicago,
 .footer {
   align-items: center;
