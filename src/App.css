@@ -304,7 +304,7 @@ img {
 
 body {
   font-family: 'Karla', sans-serif;
-  color: #333333;
+  color: #333;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -374,7 +374,8 @@ a:hover {
   font-weight: normal;
 }
 
-.cta-content h3, p {
+.cta-content h3, 
+.cta-content p {
   color:#EDEFEE;
   font-weight: normal;
   margin: 0px;
