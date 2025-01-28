@@ -99,7 +99,6 @@ img {
   width: 100%;
 }
 
-.call-to-action,
 .specials,
 .customers-say,
 .chicago {
@@ -114,7 +113,40 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  width: 100%;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.cta-content-text {
+  flex: 1;
+}
+
+.cta-image {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo de la imagen */
+  height: auto;
+  align-self: self-end;
+}
+.cta-content button {
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+}
+
+.cta-content p {
+  max-width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .specials {
@@ -275,6 +307,7 @@ body {
   color: #333333;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -327,4 +360,21 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.call-to-action {
+  background-color: #495E57;
+}
+
+.cta-content h2 {
+  color: #F4CE14;
+  margin: 0px;
+  padding-bottom: 0px;
+  font-weight: normal;
+}
+
+.cta-content h3, p {
+  color:#EDEFEE;
+  font-weight: normal;
+  margin: 0px;
 }
