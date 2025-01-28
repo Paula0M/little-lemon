@@ -26,7 +26,6 @@ footer-logo {
 
 .App-header {
   background-color: #EDEFEE;
-  padding: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -48,13 +47,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between; /* Distribuye los elementos uniformemente */
-  padding: 10px 20px;
+
 }
 .nav-header {
   display: flex;
   align-items: center; /* Centra verticalmente los elementos del nav */
   justify-content: space-between; /* Distribuye los elementos con espacio igual entre ellos */
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #EDEFEE;
 }
 
@@ -75,7 +75,7 @@ nav a {
   color: #495e57;
   text-decoration: none;
   font-size: 18pt;
-  font-weight: 500;
+  font-weight: bolder;
 }
 
 nav a:hover {
