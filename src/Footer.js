@@ -5,11 +5,10 @@ import logo from './Assets/logo2.png'; // Import the logo
 function Footer() {
     return (
         <footer className="footer">
+            <div className="footer-content">
             {/* Logo Section */}
-            <div className="footer-logo">
-                <img src={logo} alt="Little Lemon Logo" />
+            <div className="footer-logo"> <img src={logo} alt="Little Lemon Logo" />
             </div>
-
             {/* Doormat Navigation */}
             <div className="footer-nav">
                 <h4>Doormat Navigation</h4>
@@ -37,6 +36,7 @@ function Footer() {
                 <p>Address</p>
                 <p>Phone Number</p>
                 <p>Email</p>
+            </div>
             </div>
         </footer>
     );

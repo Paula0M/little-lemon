@@ -6,15 +6,22 @@
 .logo-container {
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 50px;
 }
 
 .logo {
   height: 50px;
 }
 
+footer-logo {
+  display: flex;
+  align-items: center;
+  margin: 0; /* Elimina cualquier margen adicional */
+}
+
 .footer-logo img {
   height: 50px;
+  margin: 0; /* Elimina cualquier margen adicional */
 }
 
 .App-header {
@@ -28,7 +35,7 @@
 .header-content {
   align-items: center;
   width: 100%;
-  max-width: 55%;
+  max-width: 1200px;
 }
 
 .App-link {
@@ -206,11 +213,13 @@ img {
   padding: 20px 0;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-content {
   display: flex;
-  align-items: center;
+  flex: 1 1 25%;
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
