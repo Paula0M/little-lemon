@@ -243,10 +243,10 @@ border-radius: 8px;
 }
 
 .special-nav .icon {
-  margin-top: auto; /* Empuja el elemento hacia la parte inferior del contenedor */
-  margin-left: 5px; /* Espacio entre el texto y el icono */
-  width: 16px; /* Ajusta el tamaño del icono */
-  height: 16px; /* Ajusta el tamaño del icono */
+  margin-top: auto;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
 }
 
 .customers-say {
@@ -254,14 +254,8 @@ border-radius: 8px;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 30px;
   background-color: #D9D9D9;
-  padding: 200px;
-}
-
-.testimonials-list{
-  width: 100%;
-  max-width: 1000px;
+  padding: 100px;
 }
 
 .testimonials-list {
@@ -270,53 +264,56 @@ border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .testimonial-item {
   flex: 1 1 calc(25% - 20px);
-  margin: 10px;
-  padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  text-align: left;
-  display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px;
+  gap: 5px;
 }
 
 .testimonial-image {
   width: 60px;
   height: 60px;
   border-radius: 10%;
-  margin-bottom: 10px;
-  margin-left: 10px;
 }
 
 .testimonial-content {
   display: flex;
   flex-direction: center;
+  justify-content: center;
+  margin-right: 5px;
 }
+
+.testimonial-item h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Alinea el texto al centro */
+}
+
 .testimonial-item h3 {
   margin:  0;
 }
 
 .testimonial-item p {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .testimonial-item span {
   font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.customers-say-header {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
 }
 
 .chicago {
@@ -335,27 +332,9 @@ border-radius: 8px;
   justify-content: center;
 }
 
-.testimonial-item {
-  flex: 1 1 20%;
-  margin: 10px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.testimonial-item h3 {
-  margin: 10px 0;
-}
-
-.testimonial-item p {
-  margin: 10px 0;
-}
 .chicago p {
   width: 100%;
   max-width: 1000px;
-
 }
 
 .special-item span,
@@ -365,7 +344,6 @@ border-radius: 8px;
 
 /* Align headers to the left */
 .specials h2,
-.customers-say h2,
 .chicago h2 {
   margin: 0; /* Elimina márgenes adicionales */
   padding: 0; /* Elimina padding adicional */
