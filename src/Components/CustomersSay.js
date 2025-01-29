@@ -1,26 +1,32 @@
 import React from 'react';
 import '../App.css';
+import customer1 from '../Assets/cliente1.jpg';
+import customer2 from '../Assets/cliente2.jpg';
+import customer3 from '../Assets/cliente3.jpg';
+import customer4 from '../Assets/cliente4.jpg';
 
 function CustomersSay() {
   const testimonials = [
-    { id: 1, name: 'Customer 1', rating: 5, image: 'customer1.jpg', review: 'Great food!' },
-    { id: 2, name: 'Customer 2', rating: 4, image: 'customer2.jpg', review: 'Nice atmosphere.' },
-    { id: 3, name: 'Customer 3', rating: 5, image: 'customer3.jpg', review: 'Excellent service!' },
-    { id: 4, name: 'Customer 4', rating: 4, image: 'customer4.jpg', review: 'Loved the desserts!' },
+    { id: 1, name: 'Jane', rating: 5, image: customer1, review: 'Great food & service!' },
+    { id: 2, name: 'Hassan', rating: 4, image: customer2, review: 'Nice atmosphere.' },
+    { id: 3, name: 'Santa', rating: 5, image: customer3, review: 'Excellent service!' },
+    { id: 4, name: 'Jose', rating: 4, image: customer4, review: 'Loved the desserts!' },
   ];
 
   return (
     <section className="customers-say">
       <div className='customers-say-header'>
-      <h2>What Our Customers Say</h2>
+        <h2>Testimonials</h2>
       </div>
       <div className="testimonials-list">
         {testimonials.map(testimonial => (
           <div key={testimonial.id} className="testimonial-item">
-            <img src={`${process.env.PUBLIC_URL}/${testimonial.image}`} alt={testimonial.name} />
             <h3>{testimonial.name}</h3>
-            <p>{'⭐'.repeat(testimonial.rating)}</p>
-            <p>{testimonial.review}</p>
+            <div className="testimonial-content">
+              <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+              <p>{testimonial.review}</p>
+            </div>
+            <span>{'⭐'.repeat(testimonial.rating)}</span>
           </div>
         ))}
       </div>

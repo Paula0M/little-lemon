@@ -22,6 +22,7 @@ function Specials() {
         {specials.map(special => (
           <div key={special.id} className="special-item">
             <img src={special.image} alt={special.name} className="special-image" />
+            <div className="special-text">
             <div className="special-details">
              <div className="special-info">
                 <h3 className="special-h3">{special.name}</h3>
@@ -29,8 +30,9 @@ function Specials() {
               </div>
               <p>{special.description}</p>
             </div>
-              <nav className="special-nav">Learn More <img src={deliveryIcon} alt="Delivery Icon" className="icon" />
+              <nav className="special-nav">Order Online <img src={deliveryIcon} alt="Delivery Icon" className="icon" />
               </nav>
+            </div>
             </div>
           ))}
         </div>
