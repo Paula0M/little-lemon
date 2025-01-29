@@ -3,6 +3,7 @@ import './App.css';
 import greekSalad from './Assets/GreekSalad.png';
 import bruchette from './Assets/Bruchette.png';
 import lemonDessert from './Assets/LemonDessert.png';
+import deliveryIcon from './Icons/Delivery.svg';
 
 const specials = [
   { id: 1, name: 'Greek Salad', description: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.', price: '$10', image: greekSalad },
@@ -21,17 +22,20 @@ function Specials() {
         {specials.map(special => (
           <div key={special.id} className="special-item">
             <img src={special.image} alt={special.name} className="special-image" />
-            <div className="special-info">
-              <h3 className="special-h3">{special.name}</h3>
-              <span className="special-price">{special.price}</span>
+            <div className="special-details">
+             <div className="special-info">
+                <h3 className="special-h3">{special.name}</h3>
+                <span className="special-price">{special.price}</span>
+              </div>
+              <p>{special.description}</p>
             </div>
-            <p>{special.description}</p>
-            <nav className="special-nav"> Learn More</nav>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+              <nav className="special-nav">Learn More <img src={deliveryIcon} alt="Delivery Icon" className="icon" />
+              </nav>
+            </div>
+          ))}
+        </div>
+      </section>
+    );
 }
 
 export default Specials;

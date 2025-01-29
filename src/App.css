@@ -43,7 +43,6 @@ footer-logo {
 
 /* Navigation Styles */
 nav {
-  background-color: #EDEFEE;
   display: flex;
   align-items: center;
   justify-content: space-between; /* Distribuye los elementos uniformemente */
@@ -171,6 +170,12 @@ border-radius: 8px;
   margin-bottom: 20px;
 }
 
+.specials-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .special-item {
   flex: 1 1 25%;
   margin: 10px;
@@ -197,9 +202,17 @@ border-radius: 8px;
   margin-bottom: 10px;
 }
 
+.special-details {
+  padding: 10px;
+  flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Asegura que los elementos estén distribuidos uniformemente */
+}
+
 .special-item p {
-  margin: 20px;
-  text-align: left;
+  margin: 10px;
+  text-align: justify;
 }
 
 .special-price {
@@ -209,8 +222,27 @@ border-radius: 8px;
   margin: 20px; /* Asegura que el margen sea igual al de h3 */
   text-align: right;
 }
-.special-item h3 {
-  margin: 20px; /* Asegura que el margen sea igual al de h3 */
+.special-h3 {
+  margin: 0px;
+  padding: 10px;
+  text-align: left;
+  flex: 1;/* Asegura que el margen sea igual al de h3 */
+}
+
+.special-nav {
+  font-family: Karla, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  color: #333333;
+  cursor: pointer;
+  margin-bottom: 10px;
+  align-content: end; /* Ajusta la distancia del borde inferior */
+}
+
+.special-nav .icon {
+  margin-left: 5px; /* Espacio entre el texto y el icono */
+  width: 16px; /* Ajusta el tamaño del icono */
+  height: 16px; /* Ajusta el tamaño del icono */
 }
 
 .customers-say {
