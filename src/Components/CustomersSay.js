@@ -11,7 +11,9 @@ function CustomersSay() {
 
   return (
     <section className="customers-say">
+      <div className='customers-say-header'>
       <h2>What Our Customers Say</h2>
+      </div>
       <div className="testimonials-list">
         {testimonials.map(testimonial => (
           <div key={testimonial.id} className="testimonial-item">
