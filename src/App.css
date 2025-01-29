@@ -175,18 +175,20 @@ border-radius: 8px;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  gap: 20px;
+
 }
 
 .special-item {
   flex: 1 1 25%;
-  margin: 10px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* Asegura que los elementos estén distribuidos uniformemente */
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
 }
 
 .special-info {
@@ -204,16 +206,17 @@ border-radius: 8px;
 }
 
 .special-details {
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio disponible */
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Asegura que los elementos estén distribuidos uniformemente */
+  flex-direction: column; /* Asegura que los elementos estén distribuidos uniformemente */
 }
 
 .special-item p {
-  margin: 10px;
   text-align: justify;
+  flex-grow: 1;
+  min-height: 191px;
 }
 
 .special-price {
@@ -225,22 +228,22 @@ border-radius: 8px;
 }
 .special-h3 {
   margin: 0px;
-  padding: 10px;
   text-align: left;
-  flex: 1;/* Asegura que el margen sea igual al de h3 */
+  flex: 1;
+  max-height: 50px;
 }
 
 .special-nav {
   font-family: Karla, sans-serif;
   font-weight: bold;
-  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   color: #333333;
   cursor: pointer;
-  margin-bottom: 10px;
-  align-content: end; /* Ajusta la distancia del borde inferior */
 }
 
 .special-nav .icon {
+  margin-top: auto; /* Empuja el elemento hacia la parte inferior del contenedor */
   margin-left: 5px; /* Espacio entre el texto y el icono */
   width: 16px; /* Ajusta el tamaño del icono */
   height: 16px; /* Ajusta el tamaño del icono */
