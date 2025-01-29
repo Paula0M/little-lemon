@@ -5,9 +5,9 @@ import bruchette from './Assets/Bruchette.png';
 import lemonDessert from './Assets/LemonDessert.png';
 
 const specials = [
-  { id: 1, name: 'Greek Salad', description: 'A delicious Greek salad with fresh ingredients.', price: '$10', image: greekSalad },
-  { id: 2, name: 'Bruchette', description: 'Tasty bruchette with tomatoes and basil.', price: '$15', image: bruchette },
-  { id: 3, name: 'Lemon Dessert', description: 'A refreshing lemon dessert.', price: '$20', image: lemonDessert },
+  { id: 1, name: 'Greek Salad', description: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.', price: '$10', image: greekSalad },
+  { id: 2, name: 'Bruchette', description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.', price: '$15', image: bruchette },
+  { id: 3, name: 'Lemon Dessert', description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.', price: '$20', image: lemonDessert },
 ];
 
 function Specials() {
@@ -21,9 +21,12 @@ function Specials() {
         {specials.map(special => (
           <div key={special.id} className="special-item">
             <img src={special.image} alt={special.name} className="special-image" />
-            <h3>{special.name}</h3>
+            <div className="special-info">
+              <h3 className="special-h3">{special.name}</h3>
+              <span className="special-price">{special.price}</span>
+            </div>
             <p>{special.description}</p>
-            <span>{special.price}</span>
+            <nav className="special-nav"> Learn More</nav>
           </div>
         ))}
       </div>
