@@ -13,22 +13,13 @@
   height: 50px;
 }
 
-footer-logo {
-  display: flex;
-  align-items: center;
-  margin: 0; /* Elimina cualquier margen adicional */
-}
-
-.footer-logo img {
-  height: 50px;
-  margin: 0; /* Elimina cualquier margen adicional */
-}
-
 .App-header {
   background-color: #EDEFEE;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-content {
@@ -45,24 +36,20 @@ footer-logo {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribuye los elementos uniformemente */
-
+  justify-content: space-between;
 }
 .nav-header {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos del nav */
-  justify-content: space-between; /* Distribuye los elementos con espacio igual entre ellos */
-  padding-top: 20px;
-  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
   background-color: #EDEFEE;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  flex-grow: 1; /* Permite que la lista ocupe el espacio restante */
-  justify-content: space-evenly; /* Distribuye los elementos equidistantemente */
-  padding: 0;
+  flex-grow: 1;
+  justify-content: space-evenly;
   margin: 0;
 }
 
@@ -93,7 +80,7 @@ nav a:hover {
 .specials,
 .customers-say,
 .chicago {
-  width: 100%; /* Asegura que el fondo ocupe el 100% del ancho de la página */
+  width: 100%;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -104,7 +91,7 @@ nav a:hover {
 
 .call-to-action {
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 350px;
@@ -126,13 +113,13 @@ nav a:hover {
 
 .cta-image {
   position: relative;
-  right: 0%; /* Alinea las imágenes al lado derecho del contenedor */
-  top: 50%; /* Ajusta la posición vertical */
-  transform: translateY(25%); /* Centra verticalmente las imágenes */
+  right: 0%;
+  top: 50%;
+  transform: translateY(25%);
 }
 .cta-image img {
-  width: 400px; /* Ajusta el tamaño de las imágenes */
-  height: 400px; /* Ajusta el tamaño de las imágenes */
+  width: 400px;
+  height: 400px;
   border-radius: 10px;
   position: relative;
 }
@@ -178,7 +165,7 @@ nav a:hover {
 .specials-header {
   display: flex;
   width: 100%;
-  justify-content: space-between; /* Distribuye el título y el botón en los extremos */
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -199,14 +186,14 @@ nav a:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Asegura que los elementos estén distribuidos uniformemente */
-  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .special-info {
   display: flex;
-  justify-content: space-between; /* Distribuye el nombre y el precio en extremos opuestos */
-  align-items: center; /* Alinea verticalmente al centro */
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -220,9 +207,9 @@ nav a:hover {
 .special-details {
   padding-left: 20px;
   padding-right: 20px;
-  flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio disponible */
+  flex-grow: 1;
   display: flex;
-  flex-direction: column; /* Asegura que los elementos estén distribuidos uniformemente */
+  flex-direction: column;
 }
 
 .special-item p {
@@ -235,7 +222,7 @@ nav a:hover {
   font-size: 18px;
   font-weight: bold;
   color: #EE9972;
-  margin: 20px; /* Asegura que el margen sea igual al de h3 */
+  margin: 20px;
   text-align: right;
 }
 .special-h3 {
@@ -275,15 +262,15 @@ nav a:hover {
   width: 100%;
   height: 100px;
   text-align: center;
-  margin-bottom: 20px; /* Añade un margen inferior para separar del listado de testimonios */
+  margin-bottom: 20px;
 }
 
 .testimonials-list {
   display: flex;
   flex-wrap: wrap;
   width: 1000px;
-  justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
-  gap:35px;/* Espacio entre los elementos */
+  justify-content: flex-start;
+  gap:35px;
   margin: 0px;
 }
 
@@ -321,14 +308,14 @@ nav a:hover {
 .testimonial-item h2 {
   margin: 0px;
   padding: 0;
-  text-align: center; /* Alinea el texto al centro */
+  text-align: center;
   height: 50px;
 }
 
 .testimonial-item h3 {
   margin: 0;
-  padding: 5px 0; /* Añade padding para espaciado */
-  text-align: center; /* Alinea el texto al centro */
+  padding: 5px 0;
+  text-align: center; 
 }
 
 .testimonial-item p {
@@ -346,9 +333,8 @@ nav a:hover {
 
 .chicago {
   display: flex;
-  flex-direction: column; /* Cambia a fila para que el texto e imágenes estén alineados */
-  align-items: flex-start; /* Asegura la alineación vertical */
-  width: 100%;
+  flex-direction: column; 
+  align-items: flex-start;
   max-width: 1000px;
   position: relative;
   padding: 100px;
@@ -369,37 +355,37 @@ nav a:hover {
 }
 
 .chicago-content h3 {
-  margin: 0; /* Elimina márgenes adicionales */
-  padding: 5px 0 30px 0; /* Ajusta el padding para reducir el espacio entre h2 y h3 */
+  margin: 0;
+  padding: 5px 0 30px 0;
   width: 100%;
 }
 
 .chicago-content p {
-  width: 45%; /* Ajusta el ancho para que quede bien alineado con las imágenes */
+  width: 45%;
   line-height: 1.5;
 }
 
 .chicago-images {
   position: absolute;
-  right: 30%; /* Alinea las imágenes al lado derecho del contenedor */
-  top: 0%; /* Ajusta la posición vertical */
-  transform: translateY(-50%); /* Centra verticalmente las imágenes */
+  right: 30%;
+  top: 0%;
+  transform: translateY(-50%);
 }
 .chicago-images img {
-  width: 300px; /* Ajusta el tamaño de las imágenes */
-  height: 300px; /* Ajusta el tamaño de las imágenes */
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
   position: absolute;
 }
 
 .chicago-images img:first-child {
-  z-index: 0; /* Coloca la segunda imagen en la parte inferior */
-  left: -200px; /* Ajusta la superposición horizontal */
-  top: 130px; /* Ajusta la superposición vertical */
+  z-index: 0;
+  left: -200px;
+  top: 130px;
 }
 
 .chicago-images img:last-child {
-  z-index: 1; /* Coloca la primera imagen en la parte superior */
+  z-index: 1;
 }
 
 .special-item span,
@@ -409,6 +395,7 @@ nav a:hover {
 
 
 /* Align headers to the left */
+
 .specials h2,
 .chicago h2 {
   margin: 0;
@@ -431,9 +418,9 @@ nav a:hover {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  width: 100%; /* Fija el ancho del contenedor */
+  width: 100%;
   max-width: 1000px;;
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  margin: 0 auto;
 
 }
 
@@ -445,8 +432,23 @@ nav a:hover {
 }
 
 .footer-logo img {
-  width: 150px; /* Ajusta el tamaño de la imagen */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 150px;
+  height: auto;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  flex-direction: column; /* Alinea los enlaces en una columna */
+}
+
+.footer-social .social-icons a {
+  margin-bottom: 22px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16pt;
+}
+.footer-social .social-icons a svg {
+  margin-right: 8px; /* Añade un margen derecho para separar el icono del texto */
 }
 
 .footer-nav,
@@ -549,15 +551,15 @@ a:hover {
 button {
   width: 200px;
   height: 50px;
-  font-family: Karla, sans-serif; /* Fuente del botón */
-  font-size: 16px; /* Tamaño de la fuente */
-  font-weight: bold; /* Peso de la fuente */
-  padding: 10px 20px; /* Padding del botón */
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
   margin-bottom: 20px;
-  background-color: #F4CE14; /* Color de fondo */
-  color: #000000; /* Color del texto */
-  border: none; /* Sin borde */
-  border-radius: 16px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+  background-color: #F4CE14;
+  color: #000000;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
