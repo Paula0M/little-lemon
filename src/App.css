@@ -145,7 +145,6 @@ nav a:hover {
 .cta-content h3,
 .cta-content p {
   color:#EDEFEE;
-  font-weight: normal;
   margin: 0px;
   line-height: 1.2;
 }
@@ -280,7 +279,6 @@ nav a:hover {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,7 +315,6 @@ nav a:hover {
 .testimonial-item h3 {
   margin: 0;
   padding: 5px 0;
-  text-align: center;
 }
 
 .testimonial-item p {
@@ -500,8 +497,13 @@ body {
   background-color: #f9f9f9;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: 'Markazi Text', serif;
+  color: #495e57;
+}
+
+h4, h5, h6 {
+  font-family: 'Karla', sans-serif;
   color: #495e57;
 }
 
@@ -512,11 +514,12 @@ h1 {
 
 h2 {
   font-size: 40pt;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 20pt;
-  font-weight: 800;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -534,6 +537,7 @@ p {
   font-size: 16pt;
   line-height: 1.5;
   max-width: 65ch;
+  font-weight: 500;
 }
 
 span {
