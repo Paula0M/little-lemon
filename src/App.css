@@ -81,14 +81,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Image Styles */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 /*Components */
 
 .homepage {
@@ -348,6 +340,7 @@ border-radius: 8px;
   align-items: left;
   width: 100%;
   max-width: 1000px;
+  position: relative;
 }
 .chicago-content h2 {
   margin: 0;
@@ -366,6 +359,20 @@ border-radius: 8px;
   padding: 0; /* Elimina padding adicional */
   width: 50%;
 }
+
+.chicago-images {
+  position: absolute;
+  width: 500px;
+  height: 360px;
+  right: 0; /* Alinea las imágenes al lado derecho del contenedor */
+  top: 50%; /* Ajusta la posición vertical */
+  transform: translateY(-50%); /* Centra verticalmente las imágenes */
+}
+.chicago-images img {
+  width: 180px; /* Ajusta el tamaño de las imágenes */
+  height: 75%; /* Ajusta el tamaño de las imágenes */
+}
+
 .special-item span,
 .testimonial-item span {
   font-weight: bold;

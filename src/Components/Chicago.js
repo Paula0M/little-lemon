@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
-import image1 from '../Assets/Bruchette.png'; // Asegúrate de ajustar la ruta según sea necesario
-import image2 from '../Assets/LemonDessert.png'; // Asegúrate de ajustar la ruta según sea necesario
+import image1 from '../Assets/Chicago.jpg'; // Asegúrate de ajustar la ruta según sea necesario
+import image2 from '../Assets/restaurant.jpg'; // Asegúrate de ajustar la ruta según sea necesario
 
 function Chicago() {
   return (
