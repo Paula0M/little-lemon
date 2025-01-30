@@ -108,6 +108,8 @@ img {
   align-items: center;
 }
 
+/* Cta */
+
 .call-to-action {
   display: flex;
   justify-content: center; /* Centra el contenido horizontalmente */
@@ -153,6 +155,8 @@ border-radius: 8px;
   padding-bottom: 20px;
 }
 
+/* Specials */
+
 .specials {
   display: flex;
   flex-direction: column;
@@ -176,7 +180,6 @@ border-radius: 8px;
   justify-content: space-between;
   width: 100%;
   gap: 20px;
-
 }
 
 .special-item {
@@ -249,13 +252,15 @@ border-radius: 8px;
   height: 16px;
 }
 
+/* Customers Say */
+
 .customers-say {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-color: #D9D9D9;
-  padding: 100px;
+  padding-bottom: 100px;
 }
 .customers-say-header {
   width: 100%;
@@ -267,11 +272,10 @@ border-radius: 8px;
 .testimonials-list {
   display: flex;
   flex-wrap: wrap;
+  width: 1000px;
   justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
-  width: 100%;
-  gap: 20px; /* Espacio entre los elementos */
-  margin: 0; /* Elimina márgenes adicionales */
-  padding: 0; /* Elimina padding adicional */
+  gap:35px;/* Espacio entre los elementos */
+  margin: 0px;
 }
 
 .testimonial-item {
@@ -329,28 +333,33 @@ border-radius: 8px;
   align-items: center;
   justify-content: center;
 }
+/* Chicago */
 
 .chicago {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: left;
-  padding: 200px;
+  padding: 100px;
 }
 
-.specials-list,
-.testimonials-list {
-  width: 100%;
+.chicago-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.chicago p {
+  flex-direction: column;
+  align-items: left;
   width: 100%;
   max-width: 1000px;
 }
+.chicago-content h2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
+.chicago-content h3 {
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 5px 0 30px 0; /* Ajusta el padding para reducir el espacio entre h2 y h3 */
+  width: 100%;
+}
 .special-item span,
 .testimonial-item span {
   font-weight: bold;
@@ -359,13 +368,14 @@ border-radius: 8px;
 /* Align headers to the left */
 .specials h2,
 .chicago h2 {
-  margin: 0; /* Elimina márgenes adicionales */
-  padding: 0; /* Elimina padding adicional */
-  width: 100%; /* Asegura que el header ocupe el 100% del ancho del contenedor */
+  margin: 0;
+  padding: 0;
+  width: 100%;
   text-align: left;
   max-width: 1000px;
   margin: 0 auto;
 }
+
 
 /* Footer Styles */
 .footer {
