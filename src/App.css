@@ -329,15 +329,17 @@ border-radius: 8px;
 
 .chicago {
   display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding: 100px;
+  flex-direction: column; /* Cambia a fila para que el texto e imágenes estén alineados */
+  align-items: flex-start; /* Asegura la alineación vertical */
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
 }
 
 .chicago-content {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: flex-start;
   width: 100%;
   max-width: 1000px;
   position: relative;
@@ -355,28 +357,38 @@ border-radius: 8px;
 }
 
 .chicago-content p {
-  margin: 0; /* Elimina márgenes adicionales */
-  padding: 0; /* Elimina padding adicional */
-  width: 50%;
+  width: 45%; /* Ajusta el ancho para que quede bien alineado con las imágenes */
+  line-height: 1.5;
 }
 
 .chicago-images {
   position: absolute;
-  width: 500px;
-  height: 360px;
   right: 0; /* Alinea las imágenes al lado derecho del contenedor */
-  top: 50%; /* Ajusta la posición vertical */
+  top: 0%; /* Ajusta la posición vertical */
   transform: translateY(-50%); /* Centra verticalmente las imágenes */
 }
 .chicago-images img {
-  width: 180px; /* Ajusta el tamaño de las imágenes */
-  height: 75%; /* Ajusta el tamaño de las imágenes */
+  width: 300px; /* Ajusta el tamaño de las imágenes */
+  height: 300px; /* Ajusta el tamaño de las imágenes */
+  border-radius: 10px;
+  position: absolute;
+}
+
+.chicago-images img:first-child {
+  z-index: 0; /* Coloca la segunda imagen en la parte inferior */
+  left: -250px; /* Ajusta la superposición horizontal */
+  top: 130px; /* Ajusta la superposición vertical */
+}
+
+.chicago-images img:last-child {
+  z-index: 1; /* Coloca la primera imagen en la parte superior */
 }
 
 .special-item span,
 .testimonial-item span {
   font-weight: bold;
 }
+
 
 /* Align headers to the left */
 .specials h2,
