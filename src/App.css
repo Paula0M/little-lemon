@@ -360,6 +360,12 @@ border-radius: 8px;
   padding: 5px 0 30px 0; /* Ajusta el padding para reducir el espacio entre h2 y h3 */
   width: 100%;
 }
+
+.chicago-content p {
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 0; /* Elimina padding adicional */
+  width: 50%;
+}
 .special-item span,
 .testimonial-item span {
   font-weight: bold;
