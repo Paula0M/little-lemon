@@ -2,15 +2,15 @@
   text-align: center;
 }
 
-/* Logo */
+/*Nav-Header*/
 
 .nav-header {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el contenido horizontalmente */
+  justify-content: center;
   background-color: #EDEFEE;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para darle apariencia similar a header */
+
 }
 
 .nav-container {
@@ -18,22 +18,32 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 width: 100%;
-max-width: 1000px;;
-margin: 0;
+max-width: 1000px;
+padding: 0 ;
+box-sizing: border-box;
 }
 
 .nav-header .logo-container {
   display: flex;
-  align-items: center;
-  margin-right: auto; /* Empuja el logo hacia la izquierda */
+  align-items: flex-start;
 }
 
 .nav-header .logo {
   width: 200px;
   height: auto;
+  margin: 0;
+}
+.nav-header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
 
+
 /* Navigation Styles */
+
 nav {
   display: flex;
   align-items: center;
