@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './Components/Homepage';
 import BookingPage from './Components/BookingPage';
@@ -13,7 +13,7 @@ const initializeTimes = () => [
   '21:00'
 ];
 
-  // Función reductora para manejar el estado de availableTimes
+// Función reductora para manejar el estado de availableTimes
 const timesReducer = (state, action) => {
   switch (action.type) {
     case 'UPDATE_TIMES':

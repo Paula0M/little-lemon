@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css';
 import BookingForm from './BookingForm';
 
-function BookingPage({ availableTimes }) {
+function BookingPage({ availableTimes, updateTimes }) {
   // Definir variables de estado para cada campo del formulario
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
@@ -11,7 +11,10 @@ function BookingPage({ availableTimes }) {
   const [reservationStatus, setReservationStatus] = useState(null);
 
   // Manejar cambios en los campos del formulario
-  const handleDateChange = (e) => setDate(e.target.value);
+  const handleDateChange = (e) => {
+    setDate(e.target.value);
+    updateTimes(e.target.value); // Actualizar las horas disponibles en función de la fecha seleccionada
+  };
   const handleTimeChange = (e) => setTime(e.target.value);
   const handleGuestsChange = (e) => setGuests(e.target.value);
   const handleOccasionChange = (e) => setOccasion(e.target.value);
@@ -44,4 +47,4 @@ function BookingPage({ availableTimes }) {
   );
 }
 
-export default BookingPage; 
+export default BookingPage;
