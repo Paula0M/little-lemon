@@ -37,6 +37,7 @@ function BookingPage({ availableTimes }) {
         handleTimeChange={handleTimeChange}
         handleGuestsChange={handleGuestsChange}
         handleOccasionChange={handleOccasionChange}
+        handleSubmit={handleSubmit}
       />
       {reservationStatus && <p>{reservationStatus}</p>}
     </section>
