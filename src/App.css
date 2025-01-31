@@ -3,33 +3,34 @@
 }
 
 /* Logo */
-.logo-container {
+
+.nav-header {
   display: flex;
   align-items: center;
-  height: 50px;
-}
-
-.logo {
-  height: 50px;
-}
-
-.App-header {
+  justify-content: center; /* Centra el contenido horizontalmente */
   background-color: #EDEFEE;
-  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para darle apariencia similar a header */
+}
+
+.nav-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+max-width: 1000px;;
+margin: 0;
+}
+
+.nav-header .logo-container {
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.header-content {
   align-items: center;
-  width: 100%;
-  max-width: 1000px;
+  margin-right: auto; /* Empuja el logo hacia la izquierda */
 }
 
-.App-link {
-  color: #61dafb;
+.nav-header .logo {
+  width: 200px;
+  height: auto;
 }
 
 /* Navigation Styles */
@@ -37,12 +38,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #EDEFEE;
 }
 
 nav ul {

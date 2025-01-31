@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Main from './Main';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Home from './Components/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Components/Homepage';
 import BookingForm from './Components/BookingForm';
-import Navbar from './Components/Navbar';
+import Navbar from './Nav';
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
       <Navbar />
       <Header />
       <Main />
-      <Switch>
+      <Routes>
         <Route path="/" exact component={Home} />
         <Route path="/booking" component={BookingForm} />
-      </Switch>
+      </Routes>
     </Router>
   );
 }
