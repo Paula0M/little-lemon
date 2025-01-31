@@ -1,25 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-function BookingForm() {
-    //Definir variables de estado para cada campo del formulario
-    const [date, setDate] = useState('');
-    const [time, setTime] = useState('');
-    const [guests, setGuests] = useState(1);
-    const [occasion, setOccasion] = useState('');
-    const [availableTimes, setAvailableTimes] = useState([
-    '17:00',
-    '18:00',
-    '19:00',
-    '20:00',
-    '21:00'
-  ]);
-
-  // Manejar cambios en los campos del formulario
-  const handleDateChange = (e) => setDate(e.target.value);
-  const handleTimeChange = (e) => setTime(e.target.value);
-  const handleGuestsChange = (e) => setGuests(e.target.value);
-  const handleOccasionChange = (e) => setOccasion(e.target.value);
-
+function BookingForm({
+  date,
+  time,
+  guests,
+  occasion,
+  availableTimes,
+  handleDateChange,
+  handleTimeChange,
+  handleGuestsChange,
+  handleOccasionChange
+}) {
   return (
     <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
       <label htmlFor="res-date">Choose date</label>
