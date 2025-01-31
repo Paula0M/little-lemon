@@ -9,10 +9,11 @@ function BookingForm({
   handleDateChange,
   handleTimeChange,
   handleGuestsChange,
-  handleOccasionChange
+  handleOccasionChange,
+  handleSubmit
 }) {
   return (
-    <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
+    <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleSubmit}>
       <label htmlFor="res-date">Choose date</label>
       <input type="date" id="res-date" value={date} onChange={handleDateChange} />
 
