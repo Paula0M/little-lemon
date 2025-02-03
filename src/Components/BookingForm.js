@@ -14,6 +14,7 @@ function BookingForm({
 }) {
   return (
     <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleSubmit}>
+      <h2>Book Now</h2>
       <label htmlFor="res-date">Choose date</label>
       <input type="date" id="res-date" value={date} onChange={handleDateChange} />
 

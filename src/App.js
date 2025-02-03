@@ -14,8 +14,8 @@ function App() {
       <Header />
       <Main />
       <Routes>
-        <Route path="/" exact component={Home} />
-        <Route path="/booking" component={BookingForm} />
+        <Route path="/" exact element={Home} />
+        <Route path="/booking" element={BookingForm} />
       </Routes>
     </Router>
   );
