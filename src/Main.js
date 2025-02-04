@@ -1,3 +1,5 @@
+/* global fetchAPI */  // Importa la función de la API
+
 import React, { useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './Components/Homepage';
@@ -14,8 +16,7 @@ const initializeTimes = () => {
 const timesReducer = (state, action) => {
   switch (action.type) {
     case 'UPDATE_TIMES':
-      // Aquí puedes agregar lógica para actualizar las horas disponibles en función de la fecha
-      return initializeTimes();
+      return action.payload; // Actualiza con los nuevos horarios
     default:
       return state;
   }
@@ -27,7 +28,8 @@ function Main() {
 
   // Función para actualizar las horas disponibles
   const updateTimes = (date) => {
-    dispatch({ type: 'UPDATE_TIMES', payload: date });
+    const availableTimes = fetchAPI(date); // Llamar a la API con la nueva fecha
+    dispatch({ type: 'UPDATE_TIMES', payload: availableTimes });
   };
 
   return (
