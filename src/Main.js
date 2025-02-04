@@ -5,11 +5,10 @@ import BookingPage from './Components/BookingPage';
 import './App.css';
 
 // Función para inicializar el estado de availableTimes
-const initializeTimes = () => [
-  '19:00',
-  '20:00',
-  '21:00'
-];
+const initializeTimes = () => {
+  const today =new Date().toISOString().split('T')[0];
+  return window.fetchAPI ? window.fetchAPI(today) : [];
+};
 
 // Función reductora para manejar el estado de availableTimes
 const timesReducer = (state, action) => {
