@@ -4,6 +4,7 @@ import React, { useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './Components/Homepage';
 import BookingPage from './Components/BookingPage';
+import { fetchAPI, submitAPI } from './utils/api';
 import './App.css';
 
 // Función para inicializar el estado de availableTimes
