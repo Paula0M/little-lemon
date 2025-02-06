@@ -10,12 +10,15 @@ function BookingPage() {
 
   const [guests, setGuests] = useState('');
 
+  const [occasion, setOccasion] = useState('');
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setName('');
     setDate('');
     setTime('');
     setGuests('');
+    setOccasion('Birthday');// Valor inicial del select
     console.log('Form submitted:');
   };
 
@@ -35,8 +38,14 @@ function BookingPage() {
         
         <label htmlFor="guests">Number of Guests:</label>
         <input type="number" placeholder="guests" name="guests" value={guests} onChange={e => setGuests(e.target.value)} required />
+
+        <label htmlFor='occasion'>Ocassion:</label>
+        <select id='occasion' name='occasion' value={occasion} onChange={e => setOccasion(e.target.value)} required>
+          <option value='Birthday'>Birthday</option>
+          <option value='Anniversary'>Anniversary</option>
+        </select>
         
-        <button  type="submit">Book Now</button>
+        <button type="submit">Book Now</button>
       </form>
     </section>
   );
