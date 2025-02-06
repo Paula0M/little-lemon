@@ -1,24 +1,42 @@
-import React from 'react';
+import { useState } from 'react';
 import '../App.css';
 
 function BookingPage() {
+  const [name, setName] = useState('');
+
+  const [date, setDate] = useState('');
+
+  const [time, setTime] = useState('');
+
+  const [guests, setGuests] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setName('');
+    setDate('');
+    setTime('');
+    setGuests('');
+    console.log('Form submitted:');
+  };
+
   return (
     <section className="booking-page">
       <h2>Book a Table</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
+
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" placeholder="name" name="name" value={name} onChange={e => setName(e.target.value)} required />
         
         <label htmlFor="date">Date:</label>
-        <input type="date" id="date" name="date" required />
+        <input type="date" placeholder="date" name="date" value={date}  onChange={e => setDate(e.target.value)} required />
         
         <label htmlFor="time">Time:</label>
-        <input type="time" id="time" name="time" required />
+        <input type="time" placeholder="time" name="time" value={time}  onChange={e => setTime(e.target.value)} required />
         
         <label htmlFor="guests">Number of Guests:</label>
-        <input type="number" id="guests" name="guests" required />
+        <input type="number" placeholder="guests" name="guests" value={guests} onChange={e => setGuests(e.target.value)} required />
         
-        <button type="submit">Book Now</button>
+        <button  type="submit">Book Now</button>
       </form>
     </section>
   );
