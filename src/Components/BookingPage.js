@@ -2,7 +2,7 @@ import { useState } from 'react';
 import BookingForm from './BookingForm';
 import '../App.css';
 
-function BookingPage({ availableTimes }) {
+function BookingPage({ availableTimes, dispatch }) {
   // Estado del formulario
   const [name, setName] = useState('');
   const [date, setDate] = useState('');
@@ -26,17 +26,13 @@ function BookingPage({ availableTimes }) {
     <section className="booking-page">
       <h2>Book a Table</h2>
       <BookingForm
-        name={name}
-        setName={setName}
-        date={date}
-        setDate={setDate}
-        time={time}
-        setTime={setTime}
-        guests={guests}
-        setGuests={setGuests}
-        occasion={occasion}
-        setOccasion={setOccasion}
+        name={name} setName={setName}
+        date={date} setDate={setDate}
+        time={time} setTime={setTime}
+        guests={guests} setGuests={setGuests}
+        occasion={occasion} setOccasion={setOccasion}
         availableTimes={availableTimes}
+        dispatch={dispatch}
         handleSubmit={handleSubmit}
       />
     </section>
