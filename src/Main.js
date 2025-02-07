@@ -12,7 +12,8 @@ const initializeTimes = () => [
 const updateTimes = (state, action) => {
   switch (action.type) {
     case 'UPDATE_TIMES':
-      return initializeTimes(); // Por ahora, mantiene las mismas horas sin importar la fecha
+      console.log(`Nueva fecha seleccionada: ${action.payload}`); // Muestra la fecha seleccionada
+      return initializeTimes(); // Aquí podríamos modificar las horas en base a la fecha
     default:
       return state;
   }

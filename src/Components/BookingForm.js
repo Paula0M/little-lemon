@@ -5,7 +5,7 @@ function BookingForm({
    guests, setGuests,
    occasion, setOccasion,
    availableTimes,
-   dispatch,
+   dispatch, 
    handleSubmit
  }) {
    
