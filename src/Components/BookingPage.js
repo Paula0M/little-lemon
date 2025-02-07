@@ -1,25 +1,25 @@
 import { useState } from 'react';
+import BookingForm from './BookingForm';
 import '../App.css';
 
-function BookingPage() {
+function BookingPage({ availableTimes }) {
+  // Estado del formulario
   const [name, setName] = useState('');
-
   const [date, setDate] = useState('');
-
   const [time, setTime] = useState('');
-
   const [guests, setGuests] = useState('');
-
-  const [occasion, setOccasion] = useState('');
+  const [occasion, setOccasion] = useState('Birthday'); // Valor inicial
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('Form submitted!');
+
+    // Resetear valores después de enviar el formulario
     setName('');
     setDate('');
     setTime('');
     setGuests('');
-    setOccasion('Birthday');// Valor inicial del select
-    console.log('Form submitted:');
+    setOccasion('Birthday');
   };
 
   return (

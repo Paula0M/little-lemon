@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './Components/Homepage';
-import BookingPage from './Components/BookingForm';
+import BookingPage from './Components/BookingPage';
 
 function Main() {
   // Estado de las horas disponibles
@@ -9,12 +9,6 @@ function Main() {
     '17:00', '18:00', '19:00', '20:00', '21:00', '22:00'
   ]);
 
-  useEffect(() => {
-    // Obtener horarios para la fecha de hoy cuando se carga el componente
-    updateTimes(new Date().toISOString().split('T')[0]);
-  }, []);
-
-function Main() {
   return (
     <main>
       <Routes>
@@ -25,5 +19,4 @@ function Main() {
     </main>
   );
 }
-
-export default Main;
+export default Main
