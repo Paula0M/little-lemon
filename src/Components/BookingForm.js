@@ -5,8 +5,17 @@ function BookingForm({
    guests, setGuests,
    occasion, setOccasion,
    availableTimes,
+   dispatch,
    handleSubmit
  }) {
+   
+   // Función para manejar el cambio de fecha
+  const handleDateChange = (e) => {
+   const selectedDate = e.target.value;
+   setDate(selectedDate);
+   dispatch({ type: 'UPDATE_TIMES', payload: selectedDate }); // Envía la fecha al reducer
+ };
+
    return (
      <form onSubmit={handleSubmit} style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
        <label htmlFor="name">Name:</label>
