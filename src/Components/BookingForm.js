@@ -21,7 +21,8 @@ function BookingForm({
        <input type="text" id="name" placeholder="Name" value={name} onChange={e => setName(e.target.value)} required />
  
        <label htmlFor="res-date">Choose date:</label>
-       <input type="date" id="res-date" value={date} onChange={e => setDate(e.target.value)} required />
+       <input type="date" id="res-date" value={date} onChange={handleDateChange} required />
+
  
        <label htmlFor="res-time">Choose time:</label>
        <select id="res-time" value={time} onChange={e => setTime(e.target.value)} required>
