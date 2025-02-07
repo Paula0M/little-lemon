@@ -1,54 +1,22 @@
-import { useState } from 'react';
-import '../App.css';
+<form style={{display: grid, maxWidth: '200px', gap: '20px'}}>
 
-function BookingPage() {
-  const [name, setName] = useState('');
-
-  const [date, setDate] = useState('');
-
-  const [time, setTime] = useState('');
-
-  const [guests, setGuests] = useState('');
-
-  const [occasion, setOccasion] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setName('');
-    setDate('');
-    setTime('');
-    setGuests('');
-    setOccasion('Birthday');// Valor inicial del select
-    console.log('Form submitted:');
-  };
-
-  return (
-    <section className="booking-page">
-      <h2>Book a Table</h2>
-      <form onSubmit={handleSubmit}>
-
-        <label htmlFor="name">Name:</label>
-        <input type="text" placeholder="name" name="name" value={name} onChange={e => setName(e.target.value)} required />
-        
-        <label htmlFor="date">Date:</label>
-        <input type="date" placeholder="date" name="date" value={date}  onChange={e => setDate(e.target.value)} required />
-        
-        <label htmlFor="time">Time:</label>
-        <input type="time" placeholder="time" name="time" value={time}  onChange={e => setTime(e.target.value)} required />
-        
-        <label htmlFor="guests">Number of Guests:</label>
-        <input type="number" placeholder="guests" name="guests" value={guests} onChange={e => setGuests(e.target.value)} required />
-
-        <label htmlFor='occasion'>Ocassion:</label>
-        <select id='occasion' name='occasion' value={occasion} onChange={e => setOccasion(e.target.value)} required>
-          <option value='Birthday'>Birthday</option>
-          <option value='Anniversary'>Anniversary</option>
-        </select>
-        
-        <button type="submit">Book Now</button>
-      </form>
-    </section>
-  );
-}
-
-export default BookingPage;
+   <label htmlFor="res-date">Choose date</label>
+   <input type="date" id="res-date" />
+   <label htmlFor="res-time">Choose time</label>
+   <select id="res-time ">
+      <option>17:00</option>
+      <option>18:00</option>
+      <option>19:00</option>
+      <option>20:00</option>
+      <option>21:00</option>
+      <option>22:00</option>
+   </select>
+   <label htmlFor="guests">Number of guests</label>
+   <input type="number" placeholder={1} min={1} max={10} id={guests} />
+   <label htmlFor="occasion">Occasion</label>
+   <select id="occasion">
+      <option>Birthday</option>
+      <option>Anniversary</option>
+   </select>
+   <input type="submit" defaultValue="Make Your reservation" />
+</form>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './Components/Homepage';
-import BookingPage from './Components/BookingPage';
+import BookingPage from './Components/BookingForm';
 
 function Main() {
   // Estado de las horas disponibles
