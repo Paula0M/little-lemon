@@ -2,6 +2,7 @@ import React, { useReducer } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './Components/Homepage';
 import BookingPage from './Components/BookingPage';
+import ConfirmedBooking from './Components/ConfirmedBooking';
 import { fetchAPI } from './api';
 
 // Función para obtener los horarios disponibles para la fecha actual (hoy)
@@ -30,6 +31,7 @@ function Main() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} />} />
+        <Route path="/confirmed" element={<ConfirmedBooking />} />
       </Routes>
     </main>
   );
