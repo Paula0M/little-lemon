@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import BookingForm from './BookingForm';
 import '../App.css';
 
@@ -10,6 +11,8 @@ function BookingPage({ availableTimes, dispatch }) {
   const [guests, setGuests] = useState('');
   const [occasion, setOccasion] = useState('Birthday'); // Valor inicial
 
+  const navigate = useNavigate(); // Initialize navigation
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted!');
@@ -20,6 +23,9 @@ function BookingPage({ availableTimes, dispatch }) {
     setTime('');
     setGuests('');
     setOccasion('Birthday');
+
+    // Redirect to the confirmation page
+    navigate('/confirmed');
   };
 
   return (
