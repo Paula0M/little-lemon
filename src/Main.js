@@ -23,7 +23,6 @@ const updateTimes = (state, action) => {
 };
 
 function Main() {
-  // useReducer para manejar availableTimes
   const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
   const navigate = useNavigate();
 
@@ -38,7 +37,7 @@ function Main() {
     <main>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} />} />
+        <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />} />
         <Route path="/confirmed" element={<ConfirmedBooking />} />
       </Routes>
     </main>
