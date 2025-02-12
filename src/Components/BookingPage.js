@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import BookingForm from './BookingForm';
 import '../App.css';
+import Footer from '../Footer'
+import CustomersSay from './CustomersSay';  
+import './Booking.css'
 
 function BookingPage({ availableTimes, dispatch }) {
   // Estado del formulario
@@ -30,17 +33,24 @@ function BookingPage({ availableTimes, dispatch }) {
 
   return (
     <section className="booking-page">
-      <h2>Book a Table</h2>
-      <BookingForm
-        name={name} setName={setName}
-        date={date} setDate={setDate}
-        time={time} setTime={setTime}
-        guests={guests} setGuests={setGuests}
-        occasion={occasion} setOccasion={setOccasion}
-        availableTimes={availableTimes}
-        dispatch={dispatch}
-        handleSubmit={handleSubmit}
-      />
+      <div className="booking-inside">
+        <div className="booking-background">
+          <h2>Book a Table</h2>
+          <BookingForm
+            name={name} setName={setName}
+            date={date} setDate={setDate}
+            time={time} setTime={setTime}
+            guests={guests} setGuests={setGuests}
+            occasion={occasion} setOccasion={setOccasion}
+            availableTimes={availableTimes}
+            dispatch={dispatch}
+            handleSubmit={handleSubmit}
+          />  
+        </div>
+      </div>
+        <CustomersSay className="booking-customers" />
+        <Footer />
+  
     </section>
   );
 }

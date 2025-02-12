@@ -1,11 +1,13 @@
 import React from 'react';
 import '../App.css';
+import './Booking.css';
+
 import customer1 from '../Assets/cliente1.jpg';
 import customer2 from '../Assets/cliente2.jpg';
 import customer3 from '../Assets/cliente3.jpg';
 import customer4 from '../Assets/cliente4.jpg';
 
-function CustomersSay() {
+function CustomersSay({className}) {
   const testimonials = [
     { id: 1, name: 'Jane', rating: 5, image: customer1, review: 'Great food & service!' },
     { id: 2, name: 'Hassan', rating: 4, image: customer2, review: 'Nice atmosphere.' },
@@ -14,7 +16,7 @@ function CustomersSay() {
   ];
 
   return (
-    <section className="customers-say">
+    <section className= {`CustomersSay ${className}`}>
       <div className='customers-say-header'>
         <h2>Testimonials</h2>
       </div>
