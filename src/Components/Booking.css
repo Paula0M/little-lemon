@@ -123,6 +123,11 @@
     padding: 10px 20px;  /* Adjust padding */
   }
 
+  .booking-form h2 {
+    text-align: center;
+    margin: 0px
+  }
+
   /*ConfirmedBooking*/
 
   .confirmation-content {

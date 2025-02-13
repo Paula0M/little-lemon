@@ -19,6 +19,7 @@ function BookingForm({
 
    return (
      <form onSubmit={handleSubmit} className="booking-form">
+       <h2>Book A Table</h2> 
        <label htmlFor="name">Name:</label>
        <input type="text" id="name" placeholder="Name" value={name} onChange={e => setName(e.target.value)} required />
  
