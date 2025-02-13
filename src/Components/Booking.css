@@ -91,17 +91,17 @@
   }
 
   .booking-background {
-    flex-direction: row;
-    align-items: center;
-    text-align: space-between;
-    width: 100%;
-    max-width: 1000px;
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  width: 100%;
+  max-width: 1000px;
   }
 
   .booking-inside h1 {
     text-align: center;
     color:#F4CE14;
-    
   }
 
   .booking-form {
@@ -111,6 +111,14 @@
     margin-bottom: 45px;
     background-color: #EDEFEE;
     padding: 20px;
-    border-radius: 19px;
+    border-radius: 16px;
     border: 1px solid #7a7a7a;
+    width: 100%;
+  }
+
+  .booking-form button {
+    display: block;  /* Ensures it takes full width if needed */
+    margin: 0 auto;  /* Centers it horizontally */
+    text-align: center;  /* Centers text inside the button */
+    padding: 10px 20px;  /* Adjust padding */
   }
