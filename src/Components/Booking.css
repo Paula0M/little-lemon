@@ -186,3 +186,9 @@
     display: block;
     margin: 10px auto; /* Centers the icon */
   }
+
+  .error-message {
+    font-size: 14px;
+    color: crimson;
+    margin: 0px;
+  }
