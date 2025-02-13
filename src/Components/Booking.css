@@ -124,6 +124,13 @@
     padding: 10px 20px;  /* Adjust padding */
   }
 
+  /* Estilos cuando el botón está deshabilitado */
+.booking-form button:disabled {
+  background-color: #888888; /* Gris oscuro */
+  opacity: 0.6;  /* Reduce la opacidad para hacerlo ver más oscuro */
+  cursor: not-allowed;  /* Cambia el cursor a uno prohibido */
+}
+
   .booking-form h2 {
     text-align: center;
     margin: 0px
