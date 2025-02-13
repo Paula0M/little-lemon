@@ -35,7 +35,7 @@ function BookingPage({ availableTimes, dispatch }) {
     <section className="booking-page">
       <div className="booking-inside">
         <div className="booking-background">
-          <h2>Book a Table</h2>
+          <h1>Book a Table</h1>
           <BookingForm
             name={name} setName={setName}
             date={date} setDate={setDate}
