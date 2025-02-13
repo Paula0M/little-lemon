@@ -79,13 +79,14 @@
   }
 
   /*principal*/
-  .booking-page {
+  
+  .booking-inside {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
-  
+
   .booking-background {
     flex-direction: row;
     align-items: center;
@@ -96,4 +97,10 @@
 
   .booking-inside h2 {
     text-align: center;
+  }
+
+  .booking-form {
+    display: grid;
+    max-width: 200px;
+    gap: 20px;
   }

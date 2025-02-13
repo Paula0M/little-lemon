@@ -1,3 +1,5 @@
+import './Booking.css'
+
 function BookingForm({
    name, setName,
    date, setDate,
@@ -16,7 +18,7 @@ function BookingForm({
     };
 
    return (
-     <form onSubmit={handleSubmit} style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
+     <form onSubmit={handleSubmit} className="booking-form">
        <label htmlFor="name">Name:</label>
        <input type="text" id="name" placeholder="Name" value={name} onChange={e => setName(e.target.value)} required />
  
@@ -40,7 +42,7 @@ function BookingForm({
          <option value="Anniversary">Anniversary</option>
        </select>
  
-       <button type="submit">Make Your Reservation</button>
+       <button type="submit">Book</button>
      </form>
    );
  }
