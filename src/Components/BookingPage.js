@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import BookingForm from './BookingForm';
 import '../App.css';
 import Footer from '../Footer'
-import CustomersSay from './CustomersSay';  
+import CustomersSay from './CustomersSay';
 import './Booking.css'
 
 function BookingPage({ availableTimes, dispatch }) {
@@ -32,10 +32,10 @@ function BookingPage({ availableTimes, dispatch }) {
   };
 
   return (
-    <section className="booking-page">
+    <section className="booking-page" role="main" aria-label="Booking Page">
       <div className="booking-inside">
         <div className="booking-background">
-          <h1>RESERVATION</h1>
+        <h1 id="booking-heading">RESERVATION</h1>
           <BookingForm
             name={name} setName={setName}
             date={date} setDate={setDate}
@@ -45,12 +45,12 @@ function BookingPage({ availableTimes, dispatch }) {
             availableTimes={availableTimes}
             dispatch={dispatch}
             handleSubmit={handleSubmit}
-          />  
+            aria-labelledby="booking-heading"
+          />
         </div>
       </div>
-        <CustomersSay className="booking-customers" />
-        <Footer />
-  
+        <CustomersSay className="booking-customers" aria-label="Customer Testimonials" />
+        <Footer aria-label="Footer" />
     </section>
   );
 }
