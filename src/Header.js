@@ -4,7 +4,7 @@ import './App.css';
 
 function Header() {
   return (
-    <header className="App-header">
+    <header className="App-header" role="banner" aria-label="Main header">
     <div className="header-content">
         <Nav />
       </div>
