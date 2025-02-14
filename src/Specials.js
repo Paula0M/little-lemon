@@ -13,24 +13,24 @@ const specials = [
 
 function Specials() {
   return (
-    <section className="specials">
+    <section className="specials" aria-labelledby="specials-heading">
       <div className="specials-header">
-        <h2>This Week's Specials!</h2>
-        <button className="specials-button">View All Specials</button>
+        <h2 id="specials-heading">This Week's Specials!</h2>
+        <button className="specials-button" aria-label="View all specials">View All Specials</button>
       </div>
-      <div className="specials-list">
+      <div className="specials-list" role='list'>
         {specials.map(special => (
-          <div key={special.id} className="special-item">
-            <img src={special.image} alt={special.name} className="special-image" />
+          <div key={special.id} className="special-item" role='listitem'>
+            <img src={special.image} alt={`A delicious ${special.name} dish`} className="special-image" aria-describedby={`${special.id}-description`}/>
             <div className="special-text">
             <div className="special-details">
              <div className="special-info">
                 <h3 className="special-h3">{special.name}</h3>
                 <span className="special-price">{special.price}</span>
               </div>
-              <p>{special.description}</p>
+              <p id={`${special.id}-description`}>{special.description}</p>
             </div>
-              <nav className="special-nav">Order Online <img src={deliveryIcon} alt="Delivery Icon" className="icon" />
+              <nav className="special-nav" aria-label={`Order ${special.name} online`}>Order Online <img src={deliveryIcon} alt="Delivery Icon" className="icon" />
               </nav>
             </div>
             </div>
