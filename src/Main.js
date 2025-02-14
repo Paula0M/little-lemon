@@ -36,9 +36,9 @@ function Main() {
   return (
     <main role="main" aria-label="Main content">
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />} />
-        <Route path="/confirmed" element={<ConfirmedBooking />} />
+        <Route path="/" element={<Homepage />} aria-label="Homepage" />
+        <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} aria-labelledby="booking-heading" />} />
+        <Route path="/confirmed" element={<ConfirmedBooking aria-live="polite" aria-labelledby="confirmation-heading"/>} />
       </Routes>
     </main>
   );
