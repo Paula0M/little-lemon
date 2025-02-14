@@ -34,7 +34,7 @@ function Main() {
   };
 
   return (
-    <main>
+    <main role="main" aria-label="Main content">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/booking" element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />} />
