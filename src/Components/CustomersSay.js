@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import './Booking.css';
 
 import customer1 from '../Assets/cliente1.jpg';
 import customer2 from '../Assets/cliente2.jpg';
