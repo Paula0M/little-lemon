@@ -15,19 +15,21 @@ function CustomersSay({className}) {
   ];
 
   return (
-    <section className= {`CustomersSay ${className}`}>
+    <section className= {`CustomersSay ${className}`}aria-labelledby="testimonials-heading">
       <div className='customers-say-header'>
-        <h2>Testimonials</h2>
+        <h2 id="testimonials-heading">Testimonials</h2>
       </div>
-      <div className="testimonials-list">
+      <div className="testimonials-list" role='list'>
         {testimonials.map(testimonial => (
-          <div key={testimonial.id} className="testimonial-item">
+          <div key={testimonial.id} className="testimonial-item" role='listitem'>
             <h3>{testimonial.name}</h3>
             <div className="testimonial-content">
-              <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
-              <p>{testimonial.review}</p>
+              <img src={testimonial.image} alt={`${testimonial.name}, a satisfied customer`} className="testimonial-image" aria-describedby={`${testimonial.id}-review`} />
+                <p id={`${testimonial.id}-review`}>{testimonial.review}</p>
             </div>
-            <span>{'⭐'.repeat(testimonial.rating)}</span>
+            <span aria-label={`Rating: ${testimonial.rating} out of 5 stars`}>
+              {'⭐'.repeat(testimonial.rating)}
+            </span>
           </div>
         ))}
       </div>
