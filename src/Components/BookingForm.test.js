@@ -1,36 +1,33 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from "@testing-library/react";
 import BookingForm from './BookingForm';
 
-test('El campo de nombre tiene el atributo required', () => {
-  // Valores iniciales para los estados
-  const initialValues = {
-    name: "",
-    date: "",
-    time: "",
-    guests: 1,
-    occasion: "Birthday",
-  };
+describe('BookingForm', () => {
+    // Common setup for all tests
+    const defaultProps = {
+        name: "",
+        setName: () => {},
+        date: "",
+        setDate: () => {},
+        time: "",
+        setTime: () => {},
+        guests: 1,
+        setGuests: () => {},
+        occasion: "Birthday",
+        setOccasion: () => {},
+        availableTimes: [],
+        dispatch: () => {},
+        handleSubmit: () => {}
+    };
 
-  // Renderiza el componente con los valores iniciales
-  render(
-    <BookingForm
-      name={initialValues.name}
-      setName={() => {}}
-      date={initialValues.date}
-      setDate={() => {}}
-      time={initialValues.time}
-      setTime={() => {}}
-      guests={initialValues.guests}
-      setGuests={() => {}}
-      occasion={initialValues.occasion}
-      setOccasion={() => {}}
-      availableTimes={[]}
-      dispatch={() => {}}
-      handleSubmit={() => {}}
-    />
-  );
+    test('renders the BookingForm heading', () => {
+        render(<BookingForm {...defaultProps} />);
+        const headingElement = screen.getByText("Book A Table");
+        expect(headingElement).toBeInTheDocument();
+    });
 
-  // Verifica que el campo de nombre tenga el atributo required
-  const nameInput = screen.getByLabelText(/name/i);
-  expect(nameInput).toBeRequired();
+    test('validates name field is required', () => {
+        render(<BookingForm {...defaultProps} />);
+        const nameInput = screen.getByLabelText(/name/i);
+        expect(nameInput).toBeRequired();
+    });
 });
