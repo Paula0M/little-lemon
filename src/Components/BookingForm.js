@@ -58,7 +58,7 @@ function BookingForm({
          <option value="Anniversary">Anniversary</option>
        </select>
  
-       <button type="submit" disabled={!isFormValid()} aria-disabled={!isFormValid()} aria-label='OnClick' tabIndex="0">Book Table</button>
+       <button type="submit" disabled={!isFormValid()} aria-disabled={!isFormValid()} aria-label='OnClick' tabIndex="0">Book</button>
      </form>
    );
  }
