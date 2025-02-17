@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import img from '../Assets/restauranfood1.png';
 
 function CallToAction() {
+  const navigate = useNavigate();
   return (
     <section className="call-to-action" aria-labelledby='cta-heading'>
       <div className="cta-content">
@@ -10,7 +12,7 @@ function CallToAction() {
             <h2>Little Lemon</h2>
               <h3>Chicago</h3>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                  <button aria-label="Reserve a Table at Little Lemon">Reserve a Table</button>
+                <button type="submit" onClick={() => navigate('/booking')} aria-label='OnClick' tabIndex="0">Reserve a Table</button>
         </div>
       <div className="cta-image">
         <img src={img} alt="Fresh bruschettas with diced tomatoes, basil, garlic, and olive oil on toasted bread, beautifully presented." />
