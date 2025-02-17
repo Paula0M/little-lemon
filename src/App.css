@@ -193,6 +193,11 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+.special-item:hover {
+  transform: scale(1.1); /* Hace que el elemento aumente un 10% de su tamaño */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .special-info {
