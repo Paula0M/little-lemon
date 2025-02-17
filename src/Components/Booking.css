@@ -127,6 +127,7 @@
   /* Estilos cuando el botón está deshabilitado */
 .booking-form button:disabled {
   background-color: #888888; /* Gris oscuro */
+  color: #EDEFEE;
   opacity: 0.6;  /* Reduce la opacidad para hacerlo ver más oscuro */
   cursor: not-allowed;  /* Cambia el cursor a uno prohibido */
 }
